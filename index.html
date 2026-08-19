@@ -7,23 +7,26 @@
 
     <meta
       name="description"
-      content="M&G Tech Instalações — Instalação, manutenção e projetos elétricos."
+      content="M&G Tech Instalações — Instalação e manutenção de barramentos blindados."
     />
 
     <title>M&G Tech | Instalações</title>
 
-    <!-- Google Fonts -->
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- CSS -->
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -43,7 +46,7 @@
 
         <!-- MENU MOBILE -->
 
-        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" type="button">
           <span></span>
           <span></span>
           <span></span>
@@ -74,24 +77,28 @@
     ====================================================== -->
 
     <main>
-      <!-- =================================================
-             HERO / HOME
-        ================================================== -->
+      <!-- =====================================================
+           HERO / HOME
+      ====================================================== -->
 
       <section class="hero" id="inicio">
         <!-- IMAGEM DE FUNDO -->
+
         <div class="hero-background"></div>
 
         <!-- ESCURECIMENTO -->
+
         <div class="hero-overlay"></div>
 
         <!-- CONTEÚDO -->
+
         <div class="container hero-content">
           <div class="hero-text">
             <span class="hero-eyebrow"> EMPRESA ESPECIALIZADA EM </span>
 
             <h1>
               INSTALAÇÃO EM
+
               <br />
 
               <span>
@@ -120,90 +127,101 @@
             </div>
           </div>
         </div>
-
-        <!-- DIFERENCIAIS -->
-
+      </section>
+      <section class="hero-features-wrapper">
         <div class="hero-features container">
-          <!-- SEGURANÇA -->
+          <!-- =================================================
+         +30 ANOS
+    ================================================== -->
 
           <div class="hero-feature">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M12 3L20 6V11C20 16.5 16.5 20 12 21C7.5 20 4 16.5 4 11V6L12 3Z" />
-
-                <path d="M8.5 12L11 14.5L15.5 9.5" />
+                <circle cx="12" cy="8" r="4" />
+                <path d="M6 21V19C6 16.8 7.8 15 10 15H14C16.2 15 18 16.8 18 19V21" />
+                <path d="M4 8L4.6 6.4L6.2 6L4.6 5.6L4 4L3.4 5.6L1.8 6L3.4 6.4L4 8Z" />
+                <path d="M20 8L20.6 6.4L22.2 6L20.6 5.6L20 4L19.4 5.6L17.8 6L19.4 6.4L20 8Z" />
               </svg>
             </div>
 
-            <h3>SEGURANÇA</h3>
+            <div class="feature-content">
+              <h3>+30 ANOS EM BARRAMENTO BLINDADO</h3>
 
-            <p>
-              Conformidade com
-              <br />
-              as normas técnicas
-            </p>
+              <p>
+                Atuação sólida em projetos
+                <br />
+                prediais e industriais
+              </p>
+            </div>
           </div>
 
-          <!-- EFICIÊNCIA -->
+          <!-- =================================================
+         CONFORMIDADE
+    ================================================== -->
 
           <div class="hero-feature">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <circle cx="12" cy="12" r="3" />
+                <path d="M6 2H15L19 6V22H6V2Z" />
+                <path d="M15 2V6H19" />
+                <circle cx="12.5" cy="14.5" r="2.5" />
+                <path d="M11.5 16.8L11.5 20L12.5 19.3L13.5 20L13.5 16.8" />
+              </svg>
+            </div>
 
+            <div class="feature-content">
+              <h3>CONFORMIDADE COM AS NORMAS TÉCNICAS</h3>
+
+              <p>
+                Serviços executados segundo
+                <br />
+                as normas vigentes
+              </p>
+            </div>
+          </div>
+
+          <!-- =================================================
+         PROJETOS COM ART
+    ================================================== -->
+
+          <div class="hero-feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                 <path
-                  d="M19.4 15A1.7 1.7 0 0 0 19.7 17.2L19.8 17.3L17.3 19.8L17.2 19.7A1.7 1.7 0 0 0 15 19.4A1.7 1.7 0 0 0 14 21V21.2H10V21A1.7 1.7 0 0 0 9 19.4A1.7 1.7 0 0 0 6.8 19.7L6.7 19.8L4.2 17.3L4.3 17.2A1.7 1.7 0 0 0 4.6 15A1.7 1.7 0 0 0 3 14H2.8V10H3A1.7 1.7 0 0 0 4.6 9A1.7 1.7 0 0 0 4.3 6.8L4.2 6.7L6.7 4.2L6.8 4.3A1.7 1.7 0 0 0 9 4.6A1.7 1.7 0 0 0 10 3V2.8H14V3A1.7 1.7 0 0 0 15 4.6A1.7 1.7 0 0 0 17.2 4.3L17.3 4.2L19.8 6.7L19.7 6.8A1.7 1.7 0 0 0 19.4 9A1.7 1.7 0 0 0 21 10H21.2V14H21A1.7 1.7 0 0 0 19.4 15Z"
+                  d="M4 20V5C4 3.9 4.9 3 6 3H14L20 9V20C20 21.1 19.1 22 18 22H6C4.9 22 4 21.1 4 20Z"
                 />
+                <path d="M14 3V9H20" />
+                <path d="M8 13H16" />
+                <path d="M8 17H13" />
               </svg>
             </div>
 
-            <h3>EFICIÊNCIA</h3>
+            <div class="feature-content">
+              <h3>PROJETOS COMPLETOS COM ART</h3>
 
-            <p>
-              Execução ágil e
-              <br />
-              com qualidade
-            </p>
-          </div>
-
-          <!-- EXPERIÊNCIA -->
-
-          <div class="hero-feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <circle cx="12" cy="9" r="6" />
-
-                <path d="M8 14L6 21L12 18L18 21L16 14" />
-
-                <path d="M9.5 9L11 10.5L14.5 7" />
-              </svg>
+              <p>
+                Soluções com responsabilidade
+                <br />
+                técnica garantida
+              </p>
             </div>
-
-            <h3>EXPERIÊNCIA</h3>
-
-            <p>
-              Equipe especializada
-              <br />
-              em projetos industriais
-            </p>
           </div>
         </div>
-
-        <!-- BOTÃO WHATSAPP FLUTUANTE -->
-        <a
-          class="wppFloat"
-          target="_blank"
-          rel="noopener"
-          href="https://wa.me/5511915036059"
-          aria-label="WhatsApp"
-        >
-          <img src="assets/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" />
-        </a>
       </section>
 
-      <!-- =================================================
-             SERVIÇOS
-        ================================================== -->
+      <!-- =====================================================
+           WHATSAPP
+      ====================================================== -->
+
+      <a
+        class="wppFloat"
+        target="_blank"
+        rel="noopener"
+        href="https://wa.me/5511915036059"
+        aria-label="WhatsApp"
+      >
+        <img src="assets/whatsapp.png" alt="WhatsApp" />
+      </a>
 
       <section class="section services" id="servicos">
         <div class="container">
@@ -215,77 +233,34 @@
             </div>
 
             <p>
-              Serviços profissionais desenvolvidos para atender diferentes necessidades elétricas.
+              Serviços especializados em barramentos blindados, com segurança, eficiência e
+              conformidade técnica.
             </p>
           </div>
 
           <div class="services-grid">
-            <!-- SERVIÇO 1 -->
-
             <article class="service-card featured reveal">
               <span class="service-number"> 01 </span>
-
-              <div class="service-icon">ϟ</div>
-
-              <h3>Instalações elétricas</h3>
-
-              <p>Execução e adequação de instalações elétricas para diferentes ambientes.</p>
-
+              <div class="service-icon">⚡</div>
+              <h3>Instalação de Barramentos Blindados</h3>
+              <p>
+                Instalação segura e eficiente de sistemas de barramentos blindados, seguindo as
+                normas técnicas e as necessidades de cada projeto.
+              </p>
               <a href="#contato">
                 Saiba mais
-
                 <span> → </span>
               </a>
             </article>
-
-            <!-- SERVIÇO 2 -->
 
             <article class="service-card reveal">
               <span class="service-number"> 02 </span>
-
-              <div class="service-icon">⚡</div>
-
-              <h3>Manutenção elétrica</h3>
-
+              <div class="service-icon">🔧</div>
+              <h3>Manutenção de Barramentos Blindados</h3>
               <p>
-                Serviços preventivos e corretivos para manter sistemas funcionando com segurança.
+                Manutenção preventiva e corretiva para garantir segurança, desempenho e maior
+                durabilidade dos sistemas instalados.
               </p>
-
-              <a href="#contato">
-                Saiba mais
-
-                <span> → </span>
-              </a>
-            </article>
-
-            <!-- SERVIÇO 3 -->
-
-            <article class="service-card reveal">
-              <span class="service-number"> 03 </span>
-
-              <div class="service-icon">⌁</div>
-
-              <h3>Infraestrutura</h3>
-
-              <p>Organização e implantação de infraestrutura elétrica para obras e empresas.</p>
-
-              <a href="#contato">
-                Saiba mais
-
-                <span> → </span>
-              </a>
-            </article>
-
-            <!-- SERVIÇO 4 -->
-
-            <article class="service-card reveal">
-              <span class="service-number"> 04 </span>
-
-              <div class="service-icon">✓</div>
-
-              <h3>Projetos elétricos</h3>
-
-              <p>Planejamento de soluções elétricas de acordo com as necessidades do projeto.</p>
 
               <a href="#contato">
                 Saiba mais
@@ -297,14 +272,8 @@
         </div>
       </section>
 
-      <!-- =================================================
-             SOBRE
-        ================================================== -->
-
       <section class="section about" id="sobre">
         <div class="container about-grid">
-          <!-- IMAGEM / ELEMENTO VISUAL -->
-
           <div class="about-visual reveal">
             <div class="about-box">
               <span class="big-logo">
@@ -331,8 +300,6 @@
             </div>
           </div>
 
-          <!-- TEXTO -->
-
           <div class="about-text reveal">
             <span class="eyebrow dark"> SOBRE A M&G TECH </span>
 
@@ -342,8 +309,8 @@
             </h2>
 
             <p>
-              A M&G Tech Instalações atua com soluções profissionais para instalações, manutenção e
-              projetos elétricos.
+              A M&G Tech Instalações atua com soluções profissionais para instalação e manutenção de
+              barramentos blindados.
             </p>
 
             <p>
@@ -353,26 +320,22 @@
 
             <div class="about-list">
               <div>
-                <span> ✓ </span>
-
+                <span>✓</span>
                 Atendimento personalizado
               </div>
 
               <div>
-                <span> ✓ </span>
-
+                <span>✓</span>
                 Compromisso com prazos
               </div>
 
               <div>
-                <span> ✓ </span>
-
+                <span>✓</span>
                 Segurança na execução
               </div>
 
               <div>
-                <span> ✓ </span>
-
+                <span>✓</span>
                 Soluções sob medida
               </div>
             </div>
@@ -386,9 +349,9 @@
         </div>
       </section>
 
-      <!-- =================================================
-             PROJETOS
-        ================================================== -->
+      <!-- =====================================================
+           PROJETOS
+      ====================================================== -->
 
       <section class="section projects" id="projetos">
         <div class="container">
@@ -407,7 +370,7 @@
               <div class="project-content">
                 <span> INSTALAÇÃO </span>
 
-                <h3>Instalações elétricas</h3>
+                <h3>Barramentos blindados</h3>
               </div>
             </article>
 
@@ -415,38 +378,38 @@
               <div class="project-content">
                 <span> MANUTENÇÃO </span>
 
-                <h3>Manutenção</h3>
+                <h3>Manutenção de barramentos</h3>
               </div>
             </article>
 
             <article class="project project-three reveal">
               <div class="project-content">
-                <span> PROJETOS </span>
+                <span> SEGURANÇA </span>
 
-                <h3>Projetos elétricos</h3>
+                <h3>Execução profissional</h3>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- =================================================
-             CONTATO
-        ================================================== -->
+      <!-- =====================================================
+           CONTATO
+      ====================================================== -->
 
       <section class="contact" id="contato">
         <div class="container contact-content">
           <div class="reveal">
             <span class="eyebrow"> VAMOS CONVERSAR </span>
 
-            <h2>Precisa de uma solução elétrica?</h2>
+            <h2>Precisa de uma solução para barramentos blindados?</h2>
 
             <p>Entre em contato com a M&G Tech e solicite um orçamento.</p>
           </div>
 
           <div class="contact-buttons reveal">
             <a
-              href="https://wa.me/5500000000000"
+              href="https://wa.me/5511915036059"
               rel="noopener"
               target="_blank"
               class="btn btn-primary"
@@ -473,7 +436,10 @@
         <div>
           <img src="assets/logo.png" alt="M&G Tech" class="footer-logo" />
 
-          <p>Instalações elétricas com segurança, qualidade e profissionalismo.</p>
+          <p>
+            Instalação e manutenção de barramentos blindados com segurança, qualidade e
+            profissionalismo.
+          </p>
         </div>
 
         <!-- COLUNA 2 -->
@@ -497,7 +463,7 @@
         <div>
           <h4>Contato</h4>
 
-          <span> WhatsApp: (11) 00000-0000 </span>
+          <span> WhatsApp: (11) 91503-6059 </span>
 
           <span> contato@mgtech.com.br </span>
 
@@ -510,7 +476,9 @@
       </div>
     </footer>
 
-    <!-- JAVASCRIPT -->
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
 
     <script src="script.js"></script>
   </body>

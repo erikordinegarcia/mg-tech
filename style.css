@@ -678,16 +678,59 @@ img {
   padding-top: 115px;
 }
 
+/* =====================================================
+   BOTÃO DENTRO DO CARD
+===================================================== */
+
+.service-cta {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 25px;
+
+  padding: 14px 20px;
+
+  background: var(--yellow);
+
+  color: #000000;
+
+  border-radius: 5px;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  transition: all 0.25s ease;
+}
+
+.service-cta:hover {
+  background: #ffd033;
+
+  transform: translateY(-2px);
+}
+
+.service-cta span {
+  color: #000000;
+}
+
+
 .services-grid {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
-
   gap: 20px;
-
   max-width: 900px;
-
   margin: 0 auto;
+}
+
+.service-card:first-child:last-child {
+  grid-column: 1 / -1;
+  width: 440px;
+  justify-self: center;
 }
 
 .service-card {

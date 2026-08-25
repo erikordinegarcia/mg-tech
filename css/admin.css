@@ -1,0 +1,340 @@
+/* =====================================================
+   ADMIN — RESET BÁSICO
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #f7f7f7;
+  color: #151515;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+/* =====================================================
+   LOGIN
+===================================================== */
+
+.admin-login-body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a0a;
+  padding: 20px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 380px;
+  background: #151515;
+  border-radius: 8px;
+  padding: 40px 32px;
+  color: #ffffff;
+}
+
+.login-box h1 {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.login-subtitle {
+  margin-top: 8px;
+  margin-bottom: 28px;
+  font-size: 13px;
+  color: #999999;
+}
+
+.login-box label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #cccccc;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  background: #0a0a0a;
+  border: 1px solid #2a2a2a;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #ffc000;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 13px;
+  background: #ffc000;
+  color: #000000;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 800;
+  transition: 0.2s;
+}
+
+.login-box button:hover {
+  background: #ffd033;
+}
+
+.login-box button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-error {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #ff5c5c;
+  min-height: 16px;
+}
+
+/* =====================================================
+   DASHBOARD — LAYOUT GERAL
+===================================================== */
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 32px;
+  background: #151515;
+  color: #ffffff;
+}
+
+.admin-header h1 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.btn-logout {
+  padding: 10px 18px;
+  background: transparent;
+  border: 1px solid #444444;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.btn-logout:hover {
+  border-color: #ffc000;
+  color: #ffc000;
+}
+
+.admin-main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+  display: grid;
+  gap: 28px;
+}
+
+@media (min-width: 900px) {
+  .admin-main {
+    grid-template-columns: 380px 1fr;
+    align-items: start;
+  }
+}
+
+/* =====================================================
+   CARD DO FORMULÁRIO
+===================================================== */
+
+.admin-form-card,
+.admin-list-card {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.admin-form-card h2,
+.admin-list-card h2 {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+#project-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #444444;
+}
+
+#project-form input[type="text"],
+#project-form input[type="file"],
+#project-form textarea {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 11px 13px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-size: 13px;
+  resize: vertical;
+}
+
+#project-form input:focus,
+#project-form textarea:focus {
+  outline: none;
+  border-color: #ffc000;
+}
+
+.image-hint {
+  margin-top: -10px;
+  margin-bottom: 16px;
+  font-size: 11px;
+  color: #999999;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.form-actions button {
+  padding: 12px 18px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 800;
+  transition: 0.2s;
+}
+
+#submit-btn {
+  background: #ffc000;
+  color: #000000;
+}
+
+#submit-btn:hover {
+  background: #ffd033;
+}
+
+#submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #f0f0f0;
+  color: #151515;
+}
+
+.btn-secondary:hover {
+  background: #e4e4e4;
+}
+
+.btn-danger {
+  background: #ffe5e5;
+  color: #c0392b;
+}
+
+.btn-danger:hover {
+  background: #ffd2d2;
+}
+
+.btn-small {
+  padding: 8px 12px;
+  font-size: 11px;
+}
+
+/* =====================================================
+   LISTA DE PROJETOS CADASTRADOS
+===================================================== */
+
+.projects-admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.admin-project-item {
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+}
+
+.admin-project-thumb {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #f0f0f0;
+}
+
+.admin-project-info strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.admin-project-category {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #b58500;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.admin-project-info p {
+  font-size: 12px;
+  color: #777777;
+  line-height: 1.4;
+}
+
+.admin-project-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.loading-text {
+  font-size: 13px;
+  color: #999999;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (max-width: 500px) {
+  .admin-project-item {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-project-thumb {
+    width: 100%;
+    height: 140px;
+  }
+
+  .admin-project-actions {
+    flex-direction: row;
+  }
+}

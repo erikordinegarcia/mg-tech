@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="M&G Tech Instalações — Projetos de instalação e manutenção de barramentos blindados."
+    />
+
+    <title>Projetos | M&G Tech Instalações</title>
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+         HEADER (igual ao index.html)
+    ====================================================== -->
+
+    <header class="header header-inner">
+      <div class="container nav">
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="index.html#inicio" class="logo">
+          <img src="assets/logo.png" alt="M&G Tech Instalações" />
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html#inicio"> Início </a>
+
+          <a href="index.html#sobre"> Sobre </a>
+
+          <a href="index.html#servicos"> Serviços </a>
+
+          <a href="projetos.html" class="active"> Projetos </a>
+
+          <a href="index.html#contato"> Contato </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- =====================================================
+           CABEÇALHO DA PÁGINA
+      ====================================================== -->
+
+      <section class="page-header">
+        <div class="container">
+          <span class="eyebrow dark"> PORTFÓLIO </span>
+
+          <h1>Nossos projetos</h1>
+
+          <p>Conheça os projetos de instalação e manutenção de barramentos blindados realizados pela M&G Tech.</p>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           PROJETOS (lista dinâmica)
+      ====================================================== -->
+
+      <section class="section projects-full">
+        <div class="container">
+          <!-- Preenchido automaticamente via js/projects.js -->
+          <div id="projects-grid" class="pj-grid"></div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           CONTATO
+      ====================================================== -->
+
+      <section class="contact" id="contato">
+        <div class="container contact-content">
+          <div class="reveal">
+            <span class="eyebrow"> VAMOS CONVERSAR </span>
+
+            <h2>Precisa de uma solução para barramentos blindados?</h2>
+
+            <p>Entre em contato com a M&G Tech e solicite um orçamento.</p>
+          </div>
+
+          <div class="contact-buttons reveal">
+            <a
+              href="https://wa.me/5511947249636"
+              rel="noopener"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              WhatsApp
+
+              <span> → </span>
+            </a>
+
+            <a href="mailto:mgtech@preditherm.com.br" class="btn btn-outline-white"> Enviar e-mail </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+         WHATSAPP FLUTUANTE
+    ====================================================== -->
+
+    <a
+      class="wppFloat"
+      target="_blank"
+      rel="noopener"
+      href="https://wa.me/5511947249636"
+      aria-label="WhatsApp"
+    >
+      <img src="assets/whatsapp.png" alt="WhatsApp" />
+    </a>
+
+    <!-- =====================================================
+         FOOTER (igual ao index.html)
+    ====================================================== -->
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <p>
+            Instalação e manutenção de barramentos blindados com segurança, qualidade e
+            profissionalismo.
+          </p>
+        </div>
+
+        <div>
+          <h4>Navegação</h4>
+
+          <a href="index.html#inicio"> Início </a>
+
+          <a href="index.html#sobre"> Sobre </a>
+
+          <a href="index.html#servicos"> Serviços </a>
+
+          <a href="projetos.html"> Projetos </a>
+
+          <a href="index.html#contato"> Contato </a>
+        </div>
+
+        <div>
+          <h4>Contato</h4>
+
+          <span> WhatsApp: (11) 94724-9636 </span>
+
+          <span> mgtech@preditherm.com.br </span>
+
+          <span> Rua Tomé Portes 1016 - Sala 02, Brooklin, São Paulo </span>
+          <span> Rua Antonio Fregonesi, 84, Jd. Palermo - São Bernardo do Campo </span>
+        </div>
+      </div>
+
+      <div class="container copyright">
+        © 2026 M&G Tech Instalações. Todos os direitos reservados.
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

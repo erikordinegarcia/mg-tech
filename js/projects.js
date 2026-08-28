@@ -1,21 +1,15 @@
 // =====================================================
 // SITE PÚBLICO — Renderiza os projetos cadastrados
 // =====================================================
-// Este script busca os projetos no Supabase e monta os
-// cards dentro de <div id="projects-grid"></div>
-// Não precisa mexer nesse arquivo para adicionar projetos:
-// isso é feito pelo painel /admin.
-//
-// As classes usadas aqui (pj-grid, pj-card, pj-card-content,
-// pj-card-desc) têm um prefixo próprio de propósito, para
-// nunca colidir com as classes .project / .project-content
-// usadas na seção estática "Projetos" do index.html.
+// Categoria e descrição agora são opcionais: se não
+// forem preenchidas no painel, simplesmente não aparecem
+// no card, sem deixar espaço vazio ou "undefined".
 // =====================================================
 
 async function carregarProjetosPublicos() {
   const grid = document.getElementById('projects-grid');
 
-  if (!grid) return; // seção não existe nesta página
+  if (!grid) return;
 
   grid.innerHTML = `<p class="pj-loading">Carregando projetos...</p>`;
 
@@ -40,15 +34,21 @@ async function carregarProjetosPublicos() {
 
 function criarCardProjeto(projeto) {
   const titulo = escaparHTML(projeto.title);
-  const categoria = escaparHTML(projeto.category);
-  const descricao = escaparHTML(projeto.description);
+
+  // Categoria: só mostra o <span> se houver valor
+  const categoriaHtml = projeto.category ? `<span>${escaparHTML(projeto.category)}</span>` : '';
+
+  // Descrição: só mostra o <p> se houver valor
+  const descricaoHtml = projeto.description
+    ? `<p class="pj-card-desc">${escaparHTML(projeto.description)}</p>`
+    : '';
 
   return `
     <article class="pj-card" style="background-image: url('${projeto.image_url}')">
       <div class="pj-card-content">
-        <span>${categoria}</span>
+        ${categoriaHtml}
         <h3>${titulo}</h3>
-        <p class="pj-card-desc">${descricao}</p>
+        ${descricaoHtml}
       </div>
     </article>
   `;

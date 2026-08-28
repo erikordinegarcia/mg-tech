@@ -72,3 +72,33 @@ window.addEventListener('scroll', () => {
     link.classList.toggle('active', target === `#${current}`);
   });
 });
+
+// =====================================================
+// FAQ — ACORDEÃO
+// =====================================================
+
+document.addEventListener("DOMContentLoaded", () => {
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+
+    question.addEventListener("click", () => {
+      const estaAberto = item.classList.contains("active");
+
+      // Fecha todos os outros itens
+      faqItems.forEach((outroItem) => {
+        outroItem.classList.remove("active");
+        outroItem.querySelector(".faq-answer").style.maxHeight = null;
+      });
+
+      // Se o clicado já estava aberto, deixa fechado (toggle).
+      // Se estava fechado, abre.
+      if (!estaAberto) {
+        item.classList.add("active");
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
+  });
+});
